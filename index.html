@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolachi Navbar</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Remixicon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <div class="container-xxl position-relative d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logo.png" alt="Logo" style="height: 48px; margin-right: 6px;">
+                <span class="brand-text">Kolachi</span>
+            </a>
+
+            <!-- Reserve button -->
+            <a href="reservation.html" class="btn reserve-btn d-none d-lg-inline">Reserve</a>
+
+            <!-- Center pill nav links -->
+            <div class="nav-links-wrapper d-none d-lg-flex position-absolute start-50 translate-middle-x">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                </ul>
+            </div>
+
+            <!-- Offcanvas toggle button (small screens) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas menu -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    </ul>
+                    <a href="reservation.html" class="btn reserve-btn mt-3 w-100">Reserve</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                <div class="container-xxl h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO KOLACHI</h6>
+                            <h1 class="display-1 fw-bold text-white">Authentic Pakistani/Indian Food</h1>
+                            <a href="reservation.html" class="btn reserve-btn">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                <div class="container-xxl h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h6 class="text-white">WELCOME TO KOLACHI</h6>
+                            <h1 class="display-1 fw-bold text-white">Fresh & Delicious Taste from Karachi</h1>
+                            <a href="reservation.html" class="btn reserve-btn">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+
+
+    </div>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    
+    </div>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container-xxl">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-6">
+                    <img src="../assets/img/about.png" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About Us</h1>
+                    <div class="divider my-4"></div>
+                    <p>Superior service, personalized attention. We started with the simple idea of bringing the best
+                        from us to you. We put lots of love and careful thoughts into all we do. We hope you enjoy all
+                        we have to offer, and share the experience with others.</p>
+                    <ul>
+                        <li>Halal Pakistani food</li>
+                        <li>Original taste, and not too spicy.</li>
+                        <li>Casual dining</li>
+                        <li>Vegan and Vegetarian options available</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-brand" style="margin-top: 0.75rem">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Menu Section -->
+    <section id="menu" class="bg-#E8D1A7">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="Titles">Popular Menu Items</h1>
+                    <p style="margin-top: 2.5rem; margin-bottom: 2.5rem;">Explore our carefully crafted menu featuring fresh
+                        ingredients and bold, authentic flavors to suit every taste.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Section 2-->
+        <div class="container-xxl">
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
+                    tabindex="0">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/biryani.webp" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.0)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Chicken Biryani</a></h5>
+                                    <p class="small">Fragrant basmati rice layered with spiced chicken, caramelized
+                                        onions, and herbs. A timeless, flavorful classic.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/kebab.jpg" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (4.8)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Lamb Kebabs</a></h5>
+                                    <p class="small">Spicy smoky Tender lamb marinated in bold spices, grilled over
+                                        charcoal for a rich, smoky taste and perfect tenderness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/butterchk.jpg" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (4.9)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Butter Chicken Rice</a></h5>
+                                    <p class="small">Creamy butter chicken served with fragrant basmati rice, blending
+                                        rich spices for a comforting, flavorful meal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/naan.jpg" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.0)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Garlic Butter Naan</a></h5>
+                                    <p class="small">Soft and rich oven-baked naan brushed with rich garlic
+                                        butter—perfectly fluffy, golden, and full of irresistible flavor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/nihari.webp" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.0)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Beef Nihari</a></h5>
+                                    <p class="small">Slow-cooked beef stew simmered in rich, aromatic spices—tender,
+                                        flavorful, and traditionally served with naan or rice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/tikka.jpg" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (4.9)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Chicken Tikka Boti</a></h5>
+                                    <p class="small">Juicy chicken chunks marinated in spicy yogurt blend, grilled to
+                                        perfection for a smoky, flavorful, and tender bite.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/raita.jpg" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (4.6)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Fresh Raita</a></h5>
+                                    <p class="small">Cool and creamy yogurt-based side dish blended with fresh herbs and
+                                        spices, perfect for balancing rich, spicy flavors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item shadow-on-hover" style="background-color: #E8D1A7;">
+                                <img src="../assets/img/biryani1.jpg" style="width: 300px; height: 200px;" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span>Rated (5.0)</span>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-2 mb-2"><a href="#">Steamed Chicken Rice</a></h5>
+                                    <p class="small">Tender steamed chicken served over fragrant basmati rice, offering
+                                        a light, flavorful, and wholesome dining experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Menu button text-center mt-5">
+                        <a href="menu.html" class="btn btn-brand">Explore Menu</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-cover">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="Titles">Why to choose us?</h1>
+                    <p class="body2" style="margin-top: 40px; margin-bottom: 40px;">We deliver quality and value with friendly service and a focus on your satisfaction—every step of the way.</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-wifi-fill"></i>
+                        </div>
+                        <h4 class="body2 mt-4 mb-4">Free Wifi</h4>
+                        <p class="body2">Stay connected while you dine with our complimentary high-speed Wi-Fi—perfect for work or play.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-timer-2-fill"></i>
+                        </div>
+                        <h4 class="body2 mt-4 mb-4">Fast Delivery</h4>
+                        <p class="body2">Get your favorite meals which are delivered straight to you hot and fresh to your doorstep in lightning fast time.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="body2 mt-4 mb-4">Friendly Staff</h4>
+                        <p class="body2">Our welcoming team is always ready to serve you with a smile and make your visit memorable.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-shield-star-fill"></i>
+                        </div>
+                        <h4 class="body2 mt-4 mb-4">Highly Rated</h4>
+                        <p class="body2">Loved by locals & visitors alike, we consistently earns top ratings for taste & service making every meal memorable.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+
+    <section id="reviews" class="bg-cover">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Customer Reviews</h1>
+                    <p class="text-white" style="margin-top: 40px; margin-bottom: 40px;">Explore our carefully crafted
+                        menu featuring fresh ingredients and bold, authentic flavors to suit every taste.</p>
+                </div>
+            </div>
+
+            <div id="reviewSlider" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">“I had the Butter Chicken with Garlic Naan and it was absolutely
+                                        delicious! The flavors were rich and authentic, and the service was quick and
+                                        friendly. Definitely coming back with my family soon.”</p>
+                                    <div class="person mt-4">
+                                        <img src=".../assets/img/javisha.jpg" alt="">
+                                        <h4 class="mb-0 mt-2">Javisha Shaw</h4>
+                                        <div class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">“The Chicken Biryani was hands down the best I’ve had in the
+                                        city—perfectly spiced and generously portioned. The ambiance was cozy and
+                                        welcoming, making it a great spot for casual dinners.”</p>
+                                    <div class="person mt-4">
+                                        <img src=".../assets/img/pexels-danxavier-1212984.jpg" alt="">
+                                        <h4 class="mb-0 mb-2">Abdul Malik</h4>
+                                        <div class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-cover">
+        <div class="footer-top">
+            <div class="container-xxl">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <img src=".../assets/img/logo.png"class="mb-5 " alt="">
+                        <p>Authentic flavors, warm hospitality, and unforgettable meals—crafted with care, served with heart.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/mubaa7_/?hl=en"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="https://www.instagram.com/mubaa7_/?hl=en"><i class="ri-instagram-fill"></i></a>
+                            <a href="https://www.instagram.com/mubaa7_/?hl=en"><i class="ri-youtube-fill"></i></a>
+                            <a href="https://www.instagram.com/mubaa7_/?hl=en"><i class="ri-google-play-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 ms-auto">
+                    <h6 class="text-white mb-4">CONTACT</h6>
+                    <p class="mb-1">call +(856) 517-2840</p>
+                    <p class="mb-1">E:kolachirestaurant@gmail.com</p>
+                    <p class="mb=0">A: Kolachi Rhode Island 100 George Waterman Road</p>
+                </div>
+
+                <div class="col-lg-3 mb-4">
+                    <h6 class="text-white">OPENING HOURS</h6>
+                    <p class="mb-2">Monday-Friday : 8:00 - 22:00</p>
+                    <p class="mb-0">Saturday-Sunday : 8:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-xxl">
+                <div class="row gy-3 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© 2025 Kolachi Restaurant. All rights reserved.</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed by <a href="https://www.instagram.com/mubaa7_/?hl=en">Muhammad Mubashir</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
